@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculation</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <h2>Score Tracker</h2>
+
+    <div class="container">
+        <div class="box">
+            <h3>Quizzes, Activities, & Others</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Your Score</th>
+                        <th>Items</th>
+                        <th>Overall</th>
+                        <th class="delete-header" style="display: none;">Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="table1-body">
+                    <tr>
+                        <td>1</td>
+                        <td><input type="number" class="score-input" min="0"></td>
+                        <td><input type="number" class="items-input" min="1"></td>
+                        <td class="overall">-</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="add-btn" onclick="addRow('table1-body')">+ Add Row</div>
+            <div id="table1-grade" class="grade-display">Overall Grade: -</div>
+        </div>
+
+        <div class="box">
+            <h3>Performance Task</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Your Score</th>
+                        <th>Items</th>
+                        <th>Overall</th>
+                        <th class="delete-header" style="display: none;">Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="table2-body">
+                    <tr>
+                        <td>1</td>
+                        <td><input type="number" class="score-input" min="0"></td>
+                        <td><input type="number" class="items-input" min="1"></td>
+                        <td class="overall">-</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="add-btn" onclick="addRow('table2-body')">+ Add Row</div>
+            <div id="table2-grade" class="grade-display">Overall Grade: -</div>
+        </div>
+
+        <div class="box">
+            <h3>Exam</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Your Score</th>
+                        <th>Items</th>
+                        <th>Overall</th>
+                    </tr>
+                </thead>
+                <tbody id="table3-body">
+                    <tr>
+                        <td>1</td>
+                        <td><input type="number" class="score-input" min="0"></td>
+                        <td><input type="number" class="items-input" min="1"></td>
+                        <td class="overall">-</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="table3-grade" class="grade-display">Overall Grade: -</div>
+        </div>
+    </div>
+
+    <div class="final-grade-box">
+        <h3>Final Grade</h3>
+        <table class="final-grade-table">
+            <thead>
+                <tr>
+                    <th>Quiz/Activities/Others</th>
+                    <th>Performance Task</th>
+                    <th>Exam</th>
+                    <th>Final Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="final-quiz-grade">-</td>
+                    <td id="final-task-grade">-</td>
+                    <td id="final-exam-grade">-</td>
+                    <td id="final-grade">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/assets/js/script.js"></script>
+
+</body>
+
+</html>
+<!-- created by shinonome
+#NIoT 
+-->
